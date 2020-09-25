@@ -1,0 +1,27 @@
+//
+//
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #000;
+
+  .app__top {
+    .app__logo {
+      height: 12vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .app__videos {
+  }
+}
