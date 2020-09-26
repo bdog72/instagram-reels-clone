@@ -4,13 +4,13 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBPd5IVdR3sLa-xHEbAuN0SOqlDIRNkJfQ',
-  authDomain: 'instagram-reels-react-clone.firebaseapp.com',
-  databaseURL: 'https://instagram-reels-react-clone.firebaseio.com',
-  projectId: 'instagram-reels-react-clone',
-  storageBucket: 'instagram-reels-react-clone.appspot.com',
-  messagingSenderId: '32351561134',
-  appId: '1:32351561134:web:bae5cb57d37f89e570543f',
+  apiKey: 'AIzaSyDFOZEeqSXV6ZTvnMpb1KWu-S5GX49B3xA',
+  authDomain: 'whatsapp-clone-react-bb86b.firebaseapp.com',
+  databaseURL: 'https://whatsapp-clone-react-bb86b.firebaseio.com',
+  projectId: 'whatsapp-clone-react-bb86b',
+  storageBucket: 'whatsapp-clone-react-bb86b.appspot.com',
+  messagingSenderId: '451681786894',
+  appId: '1:451681786894:web:c5dd1321f9a75785f2705f',
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
