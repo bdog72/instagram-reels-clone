@@ -2,6 +2,7 @@
 //
 
 import React from 'react';
+import Chat from './components/Chat';
 import Sidebar from './components/Sidebar';
 
 import './styles/App.scss';
@@ -12,6 +13,7 @@ function App() {
     <div className='app'>
       <div className='app__body'>
         <Sidebar />
+        <Chat />
       </div>
     </div>
   );
