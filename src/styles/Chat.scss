@@ -1,5 +1,6 @@
 //
 //
+@import './App.scss';
 
 .chat {
   flex: 0.65;
@@ -40,7 +41,70 @@
     background-repeat: repeat;
     background-position: center;
     overflow: scroll;
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12ee6265-e947-474a-a378-6d78ab0d1117/d8fr7iz-082cab4c-3f87-47e1-b2f0-efdb504372e5.jpg/v1/fill/w_1024,h_576,q_75,strp/super_hero_whatsapp_background_by_x_ama_d8fr7iz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzYiLCJwYXRoIjoiXC9mXC8xMmVlNjI2NS1lOTQ3LTQ3NGEtYTM3OC02ZDc4YWIwZDExMTdcL2Q4ZnI3aXotMDgyY2FiNGMtM2Y4Ny00N2UxLWIyZjAtZWZkYjUwNDM3MmU1LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.vMsSrJL87xcHSN4_yT8cSlEGqymaknC5rvamCRrnlGU');
+    background-image: var(--chat__bodyImage);
+
+    .chat__message {
+      position: relative;
+      font-size: 20px;
+      // font-size: 16px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      width: fit-content;
+      margin-bottom: 30px;
+    }
+
+    .chat__receiver {
+      margin-left: auto;
+      background-color: #dcf8c6;
+    }
+
+    .chat__name {
+      position: absolute;
+      top: -17px;
+      // font-size: xx-small;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .chat__timestamp {
+      margin-left: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      // font-size: xx-small;
+    }
+  }
+
+  .chat__footer {
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+    align-items: center;
+
+    form {
+      flex: 1;
+      display: flex;
+      margin: 0 10px;
+
+      input {
+        border-radius: 30px;
+        flex: 0.9;
+        border: none;
+        padding: 10px;
+        outline: none;
+      }
+
+      button {
+        flex: 0.1;
+        display: none;
+      }
+    }
+
+    .MuiSvgIcon-root {
+      padding: 10px;
+      color: gray;
+    }
   }
 }
 
