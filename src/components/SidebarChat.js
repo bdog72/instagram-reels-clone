@@ -7,6 +7,8 @@ import db from '../firebase';
 import '../styles/SidebarChat.scss';
 import { Avatar, Button } from '@material-ui/core';
 
+import { Link } from 'react-router-dom';
+
 function SidebarChat({ id, name, addNewChat }) {
   const [seed, setSeed] = useState('');
 
@@ -27,13 +29,15 @@ function SidebarChat({ id, name, addNewChat }) {
   };
 
   return !addNewChat ? (
-    <div className='sidebarChat'>
-      <Avatar src={funnyAvatarImage} />
-      <div className='sidebarChat__info'>
-        <h2>{name}</h2>
-        <p>Last Message...</p>
+    <Link to={`/rooms/${id}`}>
+      <div className='sidebarChat'>
+        <Avatar src={funnyAvatarImage} />
+        <div className='sidebarChat__info'>
+          <h2>{name}</h2>
+          <p>Last Message...</p>
+        </div>
       </div>
-    </div>
+    </Link>
   ) : (
     <div onClick={createChat} className='sidebarChat'>
       <Button variant='contained' color='primary'>
