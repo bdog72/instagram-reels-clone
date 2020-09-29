@@ -10,8 +10,11 @@ import './styles/App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './components/Login';
 
+import { useStateValue } from './StateProvider';
+
 function App() {
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
+  const [{ user }, dispatch] = useStateValue();
 
   return (
     <div className='app'>

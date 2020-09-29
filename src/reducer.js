@@ -2,6 +2,8 @@
 //
 
 export const initialState = {
+  // user: 'null',
+  // To avoid logging in each time
   user: null,
 };
 
